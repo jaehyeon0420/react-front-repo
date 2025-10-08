@@ -7,7 +7,7 @@ import createInstance from "../../axios/Interceptor";
 
 export default function Join () {
     //.env 파일 내부 변수 값 읽기
-    const serverUrl = 'http://springboot-app:9999';
+    const serverUrl = 'http://springboot-app:8080';
     const navigate = useNavigate();
 
     //토큰 만료 시, axios 인터셉터 설정된 axios 인스턴스 사용하기!
