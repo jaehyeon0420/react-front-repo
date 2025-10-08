@@ -1,0 +1,88 @@
+/* Join.js */
+.join-wrap {
+    width: 400px;
+    margin :0 auto;
+    align-self: center;
+}
+.join-wrap .input-wrap {
+    padding: 10px 30px;
+}
+.join-button-box {
+    padding: 20px 30px;
+}
+.join-button-box>button {
+    width: 100%;
+}
+/* Login.js */
+.login-wrap {
+    width: 500px;
+    margin :0 auto;
+    align-self: center;
+}
+.login-wrap .input-wrap {
+    padding: 30px;
+}
+.login-button-box{
+    padding: 30px;
+}
+.login-button-box > button {
+    width: 100%;
+}
+.member-link-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* MemberMain */
+.mypage-wrap {
+    width :1200px;
+    display: flex;
+    gap : 10px;
+}
+.mypage-side {
+    width: 20%;
+}
+.mypage-content {
+    flex : 1;
+}
+.account-box {
+ margin-bottom: 10px;   
+}
+.account-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+}
+.account-info > span:first-child {
+    font-size: 40px;
+    color: var(--main2);
+}
+.account-info > span:last-child {
+    font-size: 20px;
+    font-family: ns-b;
+}
+ 
+/* MemberLeft */
+.side-menu li {
+    padding: 20px;
+}
+.side-menu li span:hover{
+    color : var(--main2);
+}
+
+/* MemberInfo */
+.member-info-section {
+    min-height: 600px;
+}
+.my-info .input-item > input {
+    padding: 0;
+}
+.button-zone {
+    width: 80%;
+    margin:30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
