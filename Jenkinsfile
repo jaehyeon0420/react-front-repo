@@ -8,6 +8,12 @@ pipeline {
     }
 
     stages {
+       stage('Clean NPM Cache') {
+            steps {
+	   // 빌드 이전에 캐시 제거
+               bat 'npm cache clean --force'
+            }  
+       }
        stage('Cleanup Workspace') {
             steps {
                 // 빌드마다 이전 빌드의 모든 파일을 삭제
@@ -20,19 +26,13 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Install Dependencies') {
-            steps {
-	    //버전 충돌 무시
-                bat 'npm install --legacy-peer-deps'
-            }
-        }
         stage('Build React App') {
             steps {
                 // Node 버전 확인 (디버깅용)
                 bat 'node -v'
                 // npm 설치 및 빌드
                 bat '''
-                    npm ci
+                    npm install --force
                     npm run build
                 '''
             }
