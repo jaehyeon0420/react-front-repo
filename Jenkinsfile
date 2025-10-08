@@ -20,7 +20,12 @@ pipeline {
                 checkout scm
             }
         }
-
+        stage('Install Dependencies') {
+            steps {
+	    //버전 충돌 무시
+                bat 'npm install --legacy-peer-deps'
+            }
+        }
         stage('Build React App') {
             steps {
                 // Node 버전 확인 (디버깅용)
