@@ -19,7 +19,7 @@ RUN npm run build
 FROM nginx:stable-alpine
 
 # 기본 Nginx 정적 리소스 위치에 React 빌드 결과 복사
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /app/dist /usr/share/nginx/html
 
 # Nginx 포트 설정
 EXPOSE 80
