@@ -7,7 +7,7 @@ pipeline {
         // Docker Hub에 업로드할 이미지 이름
         DOCKER_IMAGE_NAME = "react-app"
         // 젠킨스 Credential ID (Docker Hub 로그인 정보)
-        DOCKERHUB_CREDENTIALS_ID = 'dockerhub-credentials
+        DOCKERHUB_CREDENTIALS_ID = 'dockerhub-credentials'
 
 //        IMAGE_NAME = "baejaehyeon/react-app"    // Docker Hub에 업로드할 이미지 이름
 //        IMAGE_TAG = "v${BUILD_NUMBER}"     // Jenkins 빌드 넘버 기반 태그 
