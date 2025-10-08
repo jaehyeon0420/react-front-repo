@@ -33,7 +33,7 @@ pipeline {
                 // npm 설치 및 빌드
                 bat '''
                     npm install --force
-                    npm run build
+                    npm run build || { echo "Build failed"; exit 1; }
                 '''
             }
         }
