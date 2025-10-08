@@ -63,8 +63,7 @@ script {
                 withCredentials([usernamePassword(credentialsId: env.DOCKERHUB_CREDENTIALS_ID, usernameVariable: 'DOCKERHUB_USER', passwordVariable: 'DOCKERHUB_PASS')]) {
                     bat '''
                         docker login -u ${DOCKERHUB_USER} -p ${DOCKERHUB_PASS}
-//                        docker push ${IMAGE_NAME}:${IMAGE_TAG}
-                    docker push ${env.DOCKER_IMAGE_TAG}
+                        docker push ${env.DOCKER_IMAGE_TAG}
                     '''
                 }
             }
