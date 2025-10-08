@@ -6,8 +6,11 @@ WORKDIR /app
 # package.json과 package-lock.json만 먼저 복사
 COPY package*.json ./
 
+# 설치 이전에 캐시 제거
+npm cache clean --force
+
 # 의존성 설치 (npm ci는 lock파일 기반으로 빠르고 일관된 설치)
-RUN npm ci
+RUN npm install --force
 
 # 모든 소스 복사
 COPY . .
