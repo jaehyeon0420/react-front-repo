@@ -11,7 +11,7 @@ import Swal from "sweetalert2";
     단, 입력한 기존 비밀번호가 일치하는지는 서버에서 판단
 */
 export default function MemberPwChg(){
-    const serverUrl = import.meta.env.VITE_BACK_SERVER;
+    const serverUrl = 'http://localhost:9999';
     const axiosInstance = createInstance();
 
     //기존 비밀번호가 일치하는지 서버에 요청하여 확인할 때, 비밀번호 변경할 때 memberId 값이 필요함.

@@ -11,7 +11,7 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 export default function AdminMember(){
-    const serverUrl = import.meta.env.VITE_BACK_SERVER;
+    const serverUrl = 'http://localhost:9999';
     const axiosInstance = createInstance();
 
     const [memberList, setMemberList] = useState([]);
@@ -66,7 +66,7 @@ function Member(props) {
     const member = props.member;
     const memberList = props.memberList;
     const setMemberList = props.setMemberList;
-    const serverUrl = import.meta.env.VITE_BACK_SERVER;
+    const serverUrl = 'http://localhost:9999';
     const axiosInstance = createInstance();
     
 

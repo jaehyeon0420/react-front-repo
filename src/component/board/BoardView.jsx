@@ -9,7 +9,7 @@ import Swal from "sweetalert2";
 export default function BoardView(){
     const params = useParams();     //BoardList.jsx에서 클릭 시, URL 뒤에 전달한 게시글 번호 추출
     const boardNo = params.boardNo;
-    const serverUrl = import.meta.env.VITE_BACK_SERVER;
+    const serverUrl = 'http://localhost:9999';
     const axiosInstance = createInstance();
     const [board, setBoard] = useState({});
     const {loginMember} = useUserStore();
@@ -123,7 +123,7 @@ export default function BoardView(){
 
 function FileItem(props) {
     const file = props.file;
-    const serverUrl = import.meta.env.VITE_BACK_SERVER;
+    const serverUrl = 'http://localhost:9999';
     const axiosInstance = createInstance();
 
     function fileDown(){

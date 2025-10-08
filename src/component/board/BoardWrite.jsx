@@ -30,7 +30,7 @@ export default function BoardWrite(){
     const navigate = useNavigate();
 
     //게시글 작성 버튼 클릭 동작 함수
-    const serverUrl = import.meta.env.VITE_BACK_SERVER;
+    const serverUrl = 'http://localhost:9999';
     const axiosInstance = createInstance();
     function boardWrite(){
         //비동기 통신 시, 서버 요청 데이터에 파일이 포함된 경우 <form> 태그 형식으로 전송해야 하는데

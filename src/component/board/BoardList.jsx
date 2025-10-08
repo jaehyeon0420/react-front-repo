@@ -6,7 +6,7 @@ import useUserStore from "../../store/useUserStore";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function BoardList(){
-    const serverUrl = import.meta.env.VITE_BACK_SERVER;
+    const serverUrl = 'http://localhost:9999';
     const axiosInstance = createInstance();
 
     const [boardList, setBoardList] = useState([]); //게시글 리스트

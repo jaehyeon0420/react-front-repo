@@ -23,7 +23,7 @@ export default function ToastEditor(props){
     1) 서버에 비동기 요청하여, 서버에 이미지 업로드
     2) 결과 응답받은 후, 에디터 내부에 이미지 표기.
     */
-    const serverUrl = import.meta.env.VITE_BACK_SERVER;
+    const serverUrl = 'http://localhost:9999';
     const axiosInstance = createInstance();
     function uploadImage(file, callbackFunc){ //이미지 업로드 시, OK 버튼 누르면 파일정보와 호출할 함수 전달해줌.
         //파일 업로드 시, 필수 조건 (POST, multipart/form-data)

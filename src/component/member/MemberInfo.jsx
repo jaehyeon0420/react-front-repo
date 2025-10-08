@@ -7,7 +7,7 @@ import useUserStore from "../../store/useUserStore"; //Store import
 import Swal from "sweetalert2"; 
 
 export default function MemberInfo(){
-    const serverUrl = import.meta.env.VITE_BACK_SERVER;
+    const serverUrl = 'http://localhost:9999';
     const axiosInstance = createInstance();
     const {loginMember, setLoginMember, setIsLogined, setAccessToken, setRefreshToken} = useUserStore();
 

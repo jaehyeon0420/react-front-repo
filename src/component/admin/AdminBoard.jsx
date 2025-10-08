@@ -16,7 +16,7 @@ Products - MUI Core - Material UI - Get Started
 
 */
 export default function AdminBoard(){
-    const serverUrl = import.meta.env.VITE_BACK_SERVER;
+    const serverUrl = 'http://localhost:9999';
     const axiosInstance = createInstance();
 
     const [boardList, setBoardList] = useState([]);
@@ -78,7 +78,7 @@ function BoardItem(props) {
     const board = props.board;
     const boardList = props.boardList;
     const setBoardList = props.setBoardList;
-    const serverUrl = import.meta.env.VITE_BACK_SERVER;
+    const serverUrl = 'http://localhost:9999';
     const axiosInstance = createInstance();
     const navigate = useNavigate();
     

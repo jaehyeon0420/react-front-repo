@@ -26,7 +26,7 @@ import Swal from "sweetalert2";
 export default function BoardUpdate(){
     const params = useParams();     //BoardView.jsx에서 전달한 게시글 번호 추출
     const boardNo = params.boardNo; 
-    const serverUrl = import.meta.env.VITE_BACK_SERVER;
+    const serverUrl = 'http://localhost:9999';
     const axiosInstance = createInstance();
     
     //수정 대상 정보들 State 변수로 세팅.

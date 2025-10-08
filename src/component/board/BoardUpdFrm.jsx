@@ -34,7 +34,7 @@ export default function BoardFrm(props){
     const delBoardFileNo = props.delBoardFileNo;
     const setDelBoardFileNo = props.setDelBoardFileNo;
 
-    const serverUrl = import.meta.env.VITE_BACK_SERVER;
+    const serverUrl = 'http://localhost:9999';
 
     //제목 입력 시, 동작 함수
     function chgBoardTitle(e){

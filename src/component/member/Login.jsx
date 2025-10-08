@@ -12,7 +12,7 @@ export default function Login() {
     const {loginMember, isLogined, setIsLogined, setLoginMember, setAccessToken, setRefreshToken} = useUserStore();
 
     const navigate = useNavigate();
-    const serverUrl = import.meta.env.VITE_BACK_SERVER;
+    const serverUrl = 'http://localhost:9999';
     const axiosInstance = createInstance();
 
     //로그인 입력 정보 저장 변수(서버 전송용)
