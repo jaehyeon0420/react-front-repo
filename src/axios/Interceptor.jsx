@@ -69,7 +69,7 @@ function setInterceptors(instance) {
                     let options = {};
                     options.url = 'http://localhost:9999' + '/members/refresh';
                     options.method = 'post';
-                    options.data = loginMember;                 
+                    options.data = loginMember;                  
                     options.headers = {};
                     options.headers.refreshToken = refreshToken;
 
