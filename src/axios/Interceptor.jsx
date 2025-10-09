@@ -67,7 +67,7 @@ function setInterceptors(instance) {
                     const refreshToken = useUserStore.getState().refreshToken;  //재발급 요청 시, 리프레시 토큰을 헤더에 세팅
 
                     let options = {};
-                    options.url = import.meta.env.VITE_BACK_SERVER + '/members/refresh';
+                    options.url = 'http://localhost:9999' + '/members/refresh';
                     options.method = 'post';
                     options.data = loginMember;                 
                     options.headers = {};
