@@ -30,19 +30,19 @@
 }
 @font-face {
   font-family: ns-l;
-  src: url(/font/NotoSansKR-Light.ttf);
+  src: url(../font/NotoSansKR-Light.ttf);
 }
 @font-face {
   font-family: ns-r;
-  src: url(/font/NotoSansKR-Regular.ttf);
+  src: url(../font/NotoSansKR-Regular.ttf);
 }
 @font-face {
   font-family: ns-b;
-  src: url(/font/NotoSansKR-Bold.ttf);
+  src: url(../font/NotoSansKR-Bold.ttf);
 }
 @font-face {
   font-family: ns-black;
-  src: url(/font/NotoSansKR-Black.ttf);
+  src: url(../font/NotoSansKR-Black.ttf);
 }
 * {
   margin: 0;
