@@ -1,0 +1,26 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/assets/*", "*.{css,scss,js,mjs,jsx,ts,tsx,png,gif,ico,jpg,jpeg,svg,woff,woff2,ttf,eot,json}"]
+  },
+  "routes": [
+    {
+      "route": "/assets/*",
+      "headers": {
+        "Content-Type": "application/javascript; charset=utf-8"
+      }
+    }
+  ],
+  "mimeTypes": {
+    ".js": "application/javascript",
+    ".mjs": "application/javascript",
+    ".jsx": "application/javascript",
+    ".ts": "application/javascript",
+    ".tsx": "application/javascript",
+    ".json": "application/json",
+    ".css": "text/css"
+  },
+  "globalHeaders": {
+    "Cache-Control": "public, max-age=31536000, immutable"
+  }
+}
